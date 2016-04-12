@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router';
 import Search from './Search';
 import Filters from './Filters';
-import DisplayResults from '.DisplayResults';
+import DisplayResults from './DisplayResults';
 
 const Home = React.createClass({
   clickConfirm: function(){
