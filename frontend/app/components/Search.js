@@ -5,8 +5,8 @@ const Search = React.createClass({
     return(
       <div>
         <h3>Find Restaurant by Name:</h3>
-        <input type='text' placeholder='search by name' />
-        <button type='button'>Submit!</button>
+        <input onChange={this.props.onChangeName} type='text' placeholder='search by name' />
+        <button onClick={this.props.onSubmit} type='button'>Submit!</button>
       </div>
     );
   }
