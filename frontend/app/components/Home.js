@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
-import SearchName from './SearchName';
+// import SearchName from './SearchName';
 import SearchLocation from './SearchLocation';
-import Filters from './Filters';
+// import Filters from './Filters';
 import DisplayResults from './DisplayResults';
 import axios from 'axios';
 
@@ -14,7 +14,11 @@ const Home = React.createClass({
     return {
       ajaxReturn: [],
       searchName: '',
-      searchLocation: ''
+      searchLocation: '',
+      searchSeating: false,
+      searchDiet: '',
+      searchPrice: ''
+
     };
   },
   onChangeName: function(e) {
@@ -29,21 +33,44 @@ const Home = React.createClass({
       searchLocation: e.target.value
     })
   },
+  onChangeSeating: function(e) {
+    console.log("onChangeSeating was called!");
+    this.setState({
+      searchSeating: true
+    })
+  },
+  onChangeDiet: function(e) {
+    console.log("onChangeDiet was called!");
+    this.setState({
+      searchDiet: true
+    })
+  },
   onSubmit: function() {
     console.log("onSubmit was called!");
 
-    const name = this.state.searchName;
-    const location = this.state.searchLocation;
+    // const name = this.state.searchName;
+    // const location = this.state.searchLocation;
     //console.log('const name:', name);
 
-    if (name) {
-      var url = 'http://localhost:3000/restaurantByName/' + name;
+    var restaurantSearch = {};
+    if (this.state.searchName) {
+      restaurantSearch.name = this.state.searchName;
     }
-    else if (location) {
-      var url = 'http://localhost:3000/restaurantByLocation/' + location;
+    if (this.state.searchLocation) {
+      restaurantSearch.location = this.state.searchLocation;
     }
-    // AjaxHelper.getOneRecipe(name)
-    axios.get(url)
+    if (this.state.searchSeating) {
+      restaurantSearch.seating = this.state.searchSeating;
+    }
+    if (this.state.searchDiet) {
+      restaurantSearch.diet = this.state.searchDiet;
+    }
+
+
+    var url = 'http://localhost:3000/';
+    console.log('restaurantSearch:', restaurantSearch);
+
+    axios.post(url, restaurantSearch)
     .then(function(response){
       console.log("Response.data:", response.data);
       this.setState({
@@ -59,9 +86,12 @@ const Home = React.createClass({
     return(
       <div>
         <h1>Brunch Of Places</h1>
-        <SearchName onChangeName={this.onChangeName} onSubmit={this.onSubmit}/>
-        <SearchLocation onChangeLocation={this.onChangeLocation} onSubmit={this.onSubmit}/>
-        <Filters />
+
+        <SearchLocation onChangeLocation={this.onChangeLocation}
+          onChangeSeating={this.onChangeSeating}
+          onChangeDiet={this.onChangeDiet}
+          onSubmit={this.onSubmit}/>
+
         <DisplayResults restaurants={this.state.ajaxReturn} />
         <Link to="/AddNewRestaurant"><button onClick={this.clickConfirm}>Add Restaurant</button></Link>
         <br/><br/>
