@@ -9,6 +9,7 @@ function DisplayResults(props){
       Accepting Reservations: {restaurant.reservation}<br/>
       Outdoor Seating: {restaurant.seating}<br/>
       Price Range: {restaurant.price}<br/>
+      <img src={restaurant.url} />
       </li>;
   });
   return(
