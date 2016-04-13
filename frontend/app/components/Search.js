@@ -26,6 +26,8 @@ const Search = React.createClass({
         <input onChange={this.props.onChangeBottomless} type='checkbox' /><br/><br/>
         <label>Vegetarian-friendly: </label>
         <input onChange={this.props.onChangeDiet} type='checkbox' /><br/><br/>
+        <label>Accepting Reservations: </label>
+        <input onChange={this.props.onChangeReservations} type='checkbox' /><br/><br/>
         <button onClick={this.props.onSubmit} type='button'>Submit!</button>
         <hr/>
       </div>
