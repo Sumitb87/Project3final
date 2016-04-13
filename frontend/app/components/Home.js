@@ -62,7 +62,7 @@ const Home = React.createClass({
         <SearchName onChangeName={this.onChangeName} onSubmit={this.onSubmit}/>
         <SearchLocation onChangeLocation={this.onChangeLocation} onSubmit={this.onSubmit}/>
         <Filters />
-        <DisplayResults />
+        <DisplayResults restaurants={this.state.ajaxReturn} />
         <Link to="/AddNewRestaurant"><button onClick={this.clickConfirm}>Add Restaurant</button></Link>
         <br/><br/>
 
