@@ -6,9 +6,14 @@ function DisplayResults(props){
     return <li key={restaurant._id}>
       Restaurant Name: {restaurant.name}<br/>
       Location: {restaurant.location}<br/>
-      Accepting Reservations: {restaurant.reservation}<br/>
-      Outdoor Seating: {restaurant.seating}<br/>
+      Phone Number: {restaurant.phone}<br/>
+      Website: {restaurant.website}<br/>
+      Accepting Reservations: {restaurant.reservations}<br/>
+      Bottomless: {restaurant.bottomless}<br/>
       Price Range: {restaurant.price}<br/>
+      Food Rating: {restaurant.foodrating}<br/>
+      Drink Rating: {restaurant.drinkrating}<br/>
+      Tips: {restaurant.tips}<br/>
       <img src={restaurant.url} />
       </li>;
   });

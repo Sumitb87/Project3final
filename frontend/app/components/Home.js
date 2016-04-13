@@ -15,8 +15,8 @@ const Home = React.createClass({
       ajaxReturn: [],
       searchName: '',
       searchLocation: '',
-      searchSeating: false,
       searchDiet: '',
+      searchBottomless: '',
       searchPrice: ''
 
     };
@@ -33,16 +33,16 @@ const Home = React.createClass({
       searchLocation: e.target.value
     })
   },
-  onChangeSeating: function(e) {
-    console.log("onChangeSeating was called!");
+  onChangeBottomless: function(e) {
+    console.log("onChangeBottomless was called!");
     this.setState({
-      searchSeating: true
+      searchBottomless: 'Yes'
     })
   },
   onChangeDiet: function(e) {
     console.log("onChangeDiet was called!");
     this.setState({
-      searchDiet: true
+      searchDiet: 'Yes'
     })
   },
   onSubmit: function() {
@@ -59,9 +59,9 @@ const Home = React.createClass({
     if (this.state.searchLocation) {
       restaurantSearch.location = this.state.searchLocation;
     }
-    // if (this.state.searchSeating) {
-    //   restaurantSearch.seating = this.state.searchSeating;
-    // }
+    if (this.state.searchBottomless) {
+      restaurantSearch.bottomless = this.state.searchBottomless;
+    }
     if (this.state.searchDiet) {
       restaurantSearch.veggie = this.state.searchDiet;
     }
@@ -89,7 +89,7 @@ const Home = React.createClass({
 
         <Search onChangeLocation={this.onChangeLocation}
           onChangeName={this.onChangeName}
-          onChangeSeating={this.onChangeSeating}
+          onChangeBottomless={this.onChangeBottomless}
           onChangeDiet={this.onChangeDiet}
           onSubmit={this.onSubmit}/>
 
