@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 // import SearchName from './SearchName';
-import SearchLocation from './SearchLocation';
+import Search from './Search';
 // import Filters from './Filters';
 import DisplayResults from './DisplayResults';
 import axios from 'axios';
@@ -87,7 +87,8 @@ const Home = React.createClass({
       <div>
         <h1>Brunch Of Places</h1>
 
-        <SearchLocation onChangeLocation={this.onChangeLocation}
+        <Search onChangeLocation={this.onChangeLocation}
+          onChangeName={this.onChangeName}
           onChangeSeating={this.onChangeSeating}
           onChangeDiet={this.onChangeDiet}
           onSubmit={this.onSubmit}/>
