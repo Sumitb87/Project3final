@@ -5,8 +5,21 @@ const Search = React.createClass({
     return(
       <div>
         <h3>Find Restaurant by Location:</h3>
-        <input onChange={this.props.onChangeLocation} type='text' placeholder='search by location' />
-        <h3>Or Search by Name:</h3>
+        <select onChange={this.props.onChangeLocation}>
+          <option placeholder='select location' value=''>select location</option>
+          <option value='Chelsea'>Chelsea</option>
+          <option value='Financial District'>Financial District</option>
+          <option value='Flatiron'>Flatiron</option>
+          <option value='Hells Kitchen'>Hells Kitchen</option>
+          <option value='Meatpacking'>Meatpacking</option>
+          <option value='Midtown East'>Midtown East</option>
+          <option value='Soho'>Soho</option>
+          <option value='Tribeca'>Tribeca</option>
+          <option value='Upper East'>Upper East</option>
+          <option value='Upper West'>Upper West</option>
+        </select>
+
+        <h3>or Search by Name:</h3>
         <input onChange={this.props.onChangeName} type='text' placeholder='search by name' />
         <h4>Filter by:</h4>
         <label>Outdoor Seating: </label>

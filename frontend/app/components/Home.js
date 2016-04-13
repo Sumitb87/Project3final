@@ -59,11 +59,11 @@ const Home = React.createClass({
     if (this.state.searchLocation) {
       restaurantSearch.location = this.state.searchLocation;
     }
-    if (this.state.searchSeating) {
-      restaurantSearch.seating = this.state.searchSeating;
-    }
+    // if (this.state.searchSeating) {
+    //   restaurantSearch.seating = this.state.searchSeating;
+    // }
     if (this.state.searchDiet) {
-      restaurantSearch.diet = this.state.searchDiet;
+      restaurantSearch.veggie = this.state.searchDiet;
     }
 
 
