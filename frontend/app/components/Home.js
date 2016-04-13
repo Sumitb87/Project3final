@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
-import Search from './Search';
+import SearchName from './SearchName';
+import SearchLocation from './SearchLocation';
 import Filters from './Filters';
 import DisplayResults from './DisplayResults';
 import axios from 'axios';
@@ -12,7 +13,8 @@ const Home = React.createClass({
   getInitialState: function() {
     return {
       ajaxReturn: [],
-      searchName: ''
+      searchName: '',
+      searchLocation: ''
     };
   },
   onChangeName: function(e) {
@@ -21,14 +23,27 @@ const Home = React.createClass({
       searchName: e.target.value
     })
   },
+  onChangeLocation: function(e) {
+    console.log('onChangeLocation was called!');
+    this.setState({
+      searchLocation: e.target.value
+    })
+  },
   onSubmit: function() {
     console.log("onSubmit was called!");
 
     const name = this.state.searchName;
-    console.log('const name:', name);
+    const location = this.state.searchLocation;
+    //console.log('const name:', name);
 
+    if (name) {
+      var url = 'http://localhost:3000/restaurantByName/' + name;
+    }
+    else if (location) {
+      var url = 'http://localhost:3000/restaurantByLocation/' + location;
+    }
     // AjaxHelper.getOneRecipe(name)
-    axios.get('http://localhost:3000/restaurantByName/' + name)
+    axios.get(url)
     .then(function(response){
       console.log("Response.data:", response.data);
       this.setState({
@@ -44,7 +59,8 @@ const Home = React.createClass({
     return(
       <div>
         <h1>Brunch Of Places</h1>
-        <Search onChangeName={this.onChangeName} onSubmit={this.onSubmit}/>
+        <SearchName onChangeName={this.onChangeName} onSubmit={this.onSubmit}/>
+        <SearchLocation onChangeLocation={this.onChangeLocation} onSubmit={this.onSubmit}/>
         <Filters />
         <DisplayResults />
         <Link to="/AddNewRestaurant"><button onClick={this.clickConfirm}>Add Restaurant</button></Link>
