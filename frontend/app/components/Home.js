@@ -6,6 +6,8 @@ import Search from './Search';
 import DisplayResults from './DisplayResults';
 import axios from 'axios';
 
+var url = 'http://localhost:3000/';
+
 const Home = React.createClass({
   clickConfirm: function(){
     console.log('button was clicked!');
@@ -21,6 +23,21 @@ const Home = React.createClass({
       searchPrice:''
 
     };
+  },
+  componentDidMount: function() {
+    console.log("get all restaurants!");
+
+    axios.get(url)
+    .then(function(response){
+      console.log("Response.data:", response.data);
+      this.setState({
+        ajaxReturn: response.data
+      });
+    }.bind(this))
+    .catch(function(err){
+      console.warn('Error');
+      return err;
+    })
   },
   onChangeName: function(e) {
     console.log('onChangeName was called!');
@@ -121,8 +138,6 @@ const Home = React.createClass({
     }
 
 
-
-    var url = 'http://localhost:3000/';
     console.log('restaurantSearch:', restaurantSearch);
 
     axios.post(url, restaurantSearch)

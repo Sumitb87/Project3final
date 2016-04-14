@@ -11,30 +11,30 @@ app.use(bodyParser.json());
 var MongoClient = mongodb.MongoClient;
 var mongoUrl = 'mongodb://localhost:27017/brunch';
 
-//View All Recipes:
-// app.get('/', function(request, response){
-//   console.log('get ajax request received!');
-//
-//   MongoClient.connect(mongoUrl, function (err, db) {
-//     var restaurantsCollection = db.collection('restaurants');
-//     if (err) {
-//       console.log('Unable to connect to the mongoDB server. ERROR:', err);
-//     } else {
-//       restaurantsCollection.find().toArray(function (err, result) {
-//         if (err) {
-//           console.log(err);
-//           response.json("error");
-//         } else if (result.length) {
-//           console.log('Results Found:', result);
-//           response.json(result);
-//         } else { //
-//           console.log('No results found!');
-//           response.json("no results found!");
-//         }
-//       }); // close find
-//     } // close else
-//   }); // close mongo connect
-// }); // close app.get
+//View All Restaurants:
+app.get('/', function(request, response){
+  console.log('get ajax request received!');
+
+  MongoClient.connect(mongoUrl, function (err, db) {
+    var restaurantsCollection = db.collection('restaurants');
+    if (err) {
+      console.log('Unable to connect to the mongoDB server. ERROR:', err);
+    } else {
+      restaurantsCollection.find().toArray(function (err, result) {
+        if (err) {
+          console.log(err);
+          response.json("error");
+        } else if (result.length) {
+          console.log('Results Found:', result);
+          response.json(result);
+        } else { //
+          console.log('No results found!');
+          response.json("no results found!");
+        }
+      }); // close find
+    } // close else
+  }); // close mongo connect
+}); // close app.get
 
 app.post('/', function(request, response){
   console.log('post ajax request received!');
