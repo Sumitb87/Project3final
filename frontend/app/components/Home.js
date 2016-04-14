@@ -167,8 +167,8 @@ const Home = React.createClass({
           onChangePriceHigh={this.onChangePriceHigh}
           onSubmit={this.onSubmit}/>
 
-        <DisplayResults restaurants={this.state.ajaxReturn} />
-        <Link to="/AddNewRestaurant"><button onClick={this.clickConfirm}>Add Restaurant</button></Link>
+        <DisplayResults route={this.props.children} restaurants={this.state.ajaxReturn} />
+
         <br/><br/>
 
       </div>

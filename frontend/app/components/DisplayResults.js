@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 function DisplayResults(props){
 
@@ -15,7 +16,9 @@ function DisplayResults(props){
       Food Rating: {restaurant.foodrating}<br/>
       Drink Rating: {restaurant.drinkrating}<br/>
       Tips: {restaurant.tips}<br/>
-      <img src={restaurant.url} />
+      <img src={restaurant.url} /><br/>
+      <Link to="/AddTip"><button restaurantName={restaurant.name} onClick={props.clickConfirm}>Add Restaurant Tip</button></Link><br/><br/>
+
       </li>;
   });
   return(
