@@ -36,21 +36,43 @@ const Home = React.createClass({
   },
   onChangeBottomless: function(e) {
     console.log("onChangeBottomless was called!");
-    this.setState({
-      searchBottomless: 'Yes'
-    })
+
+    if (!this.state.searchBottomless){
+      this.setState({
+        searchBottomless: 'Yes'
+      })
+    }
+    else if (this.state.searchBottomless){
+      this.setState({
+        searchBottomless: ''
+      })
+    }
   },
   onChangeDiet: function(e) {
     console.log("onChangeDiet was called!");
-    this.setState({
-      searchDiet: 'Yes'
-    })
+    if (!this.state.searchDiet){
+      this.setState({
+        searchDiet: 'Yes'
+      })
+    }
+    else if (this.state.searchDiet){
+      this.setState({
+        searchDiet: ''
+      })
+    }
   },
   onChangeReservations: function(e) {
     console.log("onChangeReservations was called!");
-    this.setState({
-      searchReservations: 'Yes'
-    })
+    if (!this.state.searchReservations){
+      this.setState({
+        searchReservations: 'Yes'
+      })
+    }
+    else if (this.state.searchReservations){
+      this.setState({
+        searchReservations: ''
+      })
+    }
   },
   onSubmit: function() {
     console.log("onSubmit was called!");

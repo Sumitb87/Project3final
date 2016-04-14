@@ -55,7 +55,7 @@ app.post('/', function(request, response){
           response.json(result);
         } else { //
           console.log('No results found!');
-          response.json("no results found!");
+          response.json(result);
         }
       }); // close find
     } // close else

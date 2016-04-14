@@ -8,6 +8,7 @@ function DisplayResults(props){
       Location: {restaurant.location}<br/>
       Phone Number: {restaurant.phone}<br/>
       Website: {restaurant.website}<br/>
+      Vegetarian-friendly: {restaurant.veggie}<br/>
       Accepting Reservations: {restaurant.reservations}<br/>
       Bottomless: {restaurant.bottomless}<br/>
       Price Range: {restaurant.price}<br/>
