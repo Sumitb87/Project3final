@@ -1,6 +1,7 @@
 import React from 'react';
 
 function AddTip(props) {
+  console.log('params: ', props.params);
   return(
     <div>
       <form onSubmit={props.onSubmitTip}>

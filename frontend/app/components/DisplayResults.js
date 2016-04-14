@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
+import AddTip from './AddTip';
 
 function DisplayResults(props){
 
@@ -17,7 +18,16 @@ function DisplayResults(props){
       Drink Rating: {restaurant.drinkrating}<br/>
       Tips: {restaurant.tips}<br/>
       <img src={restaurant.url} /><br/>
-      <Link to="/AddTip"><button restaurantName={restaurant.name} onClick={props.clickConfirm}>Add Restaurant Tip</button></Link><br/><br/>
+
+      <Link to={`/AddTip/${restaurant.name}`}><button >Add Restaurant Tip</button></Link>
+
+
+
+
+      <br/><br/>
+
+
+
 
       </li>;
   });
