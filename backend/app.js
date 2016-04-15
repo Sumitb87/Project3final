@@ -2,6 +2,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var mongodb = require('mongodb');
 var express = require('express');
+var ObjectId = require('mongodb').ObjectID;
 var app = express();
 
 app.use(cors());
@@ -62,69 +63,27 @@ app.post('/', function(request, response){
   }); // close mongo connect
 }); // close app.get
 
-// app.get('/restaurantByLocation/:location', function(request, response){
-//   console.log('get ajax request received!');
-//
-//   MongoClient.connect(mongoUrl, function (err, db) {
-//     var restaurantsCollection = db.collection('restaurants');
-//     if (err) {
-//       console.log('Unable to connect to the mongoDB server. ERROR:', err);
-//     } else {
-//       restaurantsCollection.find(request.params).toArray(function (err, result) {
-//         if (err) {
-//           console.log(err);
-//           response.json("error");
-//         } else if (result.length) {
-//           console.log('Results Found:', result);
-//           response.json(result);
-//         } else { //
-//           console.log('No results found!');
-//           response.json("no results found!");
-//         }
-//       }); // close find
-//     } // close else
-//   }); // close mongo connect
-// }); // close app.get
-
-//Create new recipe:
-// app.post('/addRecipe', function(request, response){
-//   console.log('post ajax request received!');
-//   console.log('request:', request);
-//
-//   MongoClient.connect(mongoUrl, function (err, db) {
-//     var contactsCollection = db.collection('recipes');
-//     if (err) {
-//       console.log('Unable to connect to the mongoDB server. ERROR:', err);
-//     } else {
-//       contactsCollection.insert(request.body, function (err, result) {
-//         if (err) {
-//           console.log(err);
-//           response.json("error");
-//         } else if (result.length) {
-//           console.log('Results Found:', result);
-//           response.json(result);
-//         } else { //
-//           console.log('No results found!');
-//           response.json("no results found!");
-//         }
-//       }); // close find
-//     } // close else
-//   }); // close mongo connect
-// }); // close app.post
-
-//Edit existing recipe:
-// app.put('/editRecipe', function(request, response){
+//Edit existing restaurant by adding a tip:
+// app.put('/', function(request, response){
 //   console.log('put ajax request received!');
-//   //console.log('request:', request);
-//   const searchName = {name: request.body.name};
-//   const updatedRecipe = request.body;
+//   var mongoID = mongodb.ObjectID(request.body.searchID);
+//
+//   // console.log('ObjectId(request.body.searchID):', ObjectId(request.body.searchID));
+//   // console.log('typeof id:', typeof request.body.searchID);
+//
+//   //tip needs to be inserted into array of tips:
+//   const tip = {
+//     author: request.body.author,
+//     tip: request.body.tip
+//   };
 //
 //   MongoClient.connect(mongoUrl, function (err, db) {
-//     var contactsCollection = db.collection('recipes');
+//     var contactsCollection = db.collection('restaurants');
 //     if (err) {
 //       console.log('Unable to connect to the mongoDB server. ERROR:', err);
 //     } else {
-//       contactsCollection.update(searchName, updatedRecipe, function (err, result) {
+//       //babblsCollection.update({_id: mongoID}, {$set: {babbl: updatedBabbl}});
+//       contactsCollection.update({_id: mongoID}, {$push: {tips: tip}}, function (err, result) {
 //         if (err) {
 //           console.log(err);
 //           response.json("error");
@@ -135,7 +94,7 @@ app.post('/', function(request, response){
 //           console.log('No results found!');
 //           response.json("no results found!");
 //         }
-//       }); // close find
+//       }); // close update
 //     } // close else
 //   }); // close mongo connect
 // }); // close app.put

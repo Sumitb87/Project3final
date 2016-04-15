@@ -38,11 +38,13 @@ const Home = React.createClass({
       this.setState({
         ajaxReturn: response.data
       });
+      //console.log("this.state.ajaxReturn:", this.state.ajaxReturn);
     }.bind(this))
     .catch(function(err){
       console.warn('Error');
       return err;
     })
+
   },
   onChangeName: function(e) {
     console.log('onChangeName was called!');

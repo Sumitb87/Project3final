@@ -11,7 +11,7 @@ const routes = (
     <Route path='/' component={Main}>
       <IndexRoute component={Home} />
       <Route path='AddTip' component={AddTip} >
-        <Route path='/AddTip/:name'  />
+        <Route path='/AddTip/:id'  />
       </Route>
 
 

@@ -3,6 +3,7 @@ import {Link} from 'react-router';
 import AddTip from './AddTip';
 
 function DisplayResults(props){
+  console.log('DisplayResults props.restaurants:', props.restaurants);
 
   const RestaurantList = props.restaurants.map((restaurant) => {
     return <li key={restaurant._id}>
@@ -18,17 +19,8 @@ function DisplayResults(props){
       Drink Rating: {restaurant.drinkrating}<br/>
       Tips: {restaurant.tips}<br/>
       <img src={restaurant.url} /><br/>
-
       <Link to={`/AddTip/${restaurant._id}`}><button >Add Restaurant Tip</button></Link>
-
-
-
-
       <br/><br/>
-
-
-
-
       </li>;
   });
   return(
