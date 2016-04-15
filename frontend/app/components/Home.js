@@ -41,7 +41,7 @@ const Home = React.createClass({
       //console.log("this.state.ajaxReturn:", this.state.ajaxReturn);
     }.bind(this))
     .catch(function(err){
-      console.warn('Error');
+      console.log('Error:', err);
       return err;
     })
 
