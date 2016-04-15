@@ -6,6 +6,8 @@ import Search from './Search';
 import DisplayResults from './DisplayResults';
 import axios from 'axios';
 
+
+
 const Home = React.createClass({
   clickConfirm: function(){
     console.log('button was clicked!');
@@ -95,7 +97,7 @@ const Home = React.createClass({
   render: function(){
     return(
       <div>
-        <h1>Brunch Of Places</h1>
+      
 
         <Search onChangeLocation={this.onChangeLocation}
           onChangeName={this.onChangeName}

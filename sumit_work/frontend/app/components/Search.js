@@ -1,10 +1,17 @@
 import React from 'react';
 
+
 const Search = React.createClass({
   render: function(){
+
+
+
+    }
+
     return(
+
       <div>
-        <h3>Find Restaurant by Location:</h3>
+        <h3>  Find Restaurant by Location:</h3>
         <select onChange={this.props.onChangeLocation}>
           <option placeholder='select location' value=''>select location</option>
           <option value='Chelsea'>Chelsea</option>
@@ -19,8 +26,10 @@ const Search = React.createClass({
           <option value='Upper West'>Upper West</option>
         </select>
 
-        <h3>or Search by Name:</h3>
+        <div style>
+        <h3>Search by restaurant</h3>
         <input onChange={this.props.onChangeName} type='text' placeholder='search by name' />
+        </div>
         <h4>Filter by:</h4>
         <label>Bottomless: </label>
         <input onChange={this.props.onChangeBottomless} type='checkbox' /><br/><br/>
@@ -31,7 +40,9 @@ const Search = React.createClass({
         <button onClick={this.props.onSubmit} type='button'>Submit!</button>
         <hr/>
       </div>
+
     );
+
   }
 });
 

@@ -10,6 +10,8 @@ const routes = (
     <Route path='/' component={Main}>
       <IndexRoute component={Home} />
       <Route path='AddNewRestaurant' component={AddNewRestaurantContainer} />
+      <Route path='AddNewRestaurant' component={AddNewRestaurantContainer} />
+      <Route path='AddNewRestaurant' component={AddNewRestaurantContainer} />
     </Route>
   </Router>
 
