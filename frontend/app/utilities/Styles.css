@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 .cssmenu {
-  background: .f96e5b;
+  background: #f96e5b;
   width: auto;
 }
 .cssmenu ul {
@@ -31,7 +31,7 @@
   text-align: center;
 }
 .cssmenu ul li a {
-  color: .ffffff;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   padding: 15px 25px;
@@ -47,7 +47,7 @@
   transition: color .25s;
 }
 .cssmenu ul li a:hover {
-  color: .333333;
+  color: #333333;
 }
 .cssmenu ul li a:hover:before {
   width: 100%;
@@ -60,7 +60,7 @@
   top: 19px;
   height: 6px;
   width: 6px;
-  background: .ffffff;
+  background: #ffffff;
   opacity: .5;
 }
 .cssmenu ul li a:before {
@@ -71,7 +71,7 @@
   bottom: 0;
   height: 3px;
   width: 0;
-  background: .333333;
+  background: #333333;
   -webkit-transition: width .25s;
   -moz-transition: width .25s;
   -ms-transition: width .25s;
@@ -83,7 +83,7 @@
   display: none;
 }
 .cssmenu ul li.active a {
-  color: .333333;
+  color: #333333;
 }
 .cssmenu ul li.active a:before {
   width: 100%;
@@ -105,7 +105,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-bottom: 1px solid .fb998c;
+    border-bottom: 1px solid #fb998c;
   }
   .cssmenu ul li.last > a,
   .cssmenu ul li:last-child > a {
