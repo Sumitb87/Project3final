@@ -1,6 +1,6 @@
 ({name:"Cosme", location:"Tribeca", phone:"212-913-9659", website:"www.cosmenyc.com", veggie:"Yes", price:"high", reservations:"Yes", bottomless:"No", foodrating:"4/5", drinkrating:"4/5", tips:"good bloody mary", google:"40.7396162,-73.9905452"})
 
-({name:"Santina", location:“Meatpacking", phone:"212-254-3000", website:"www.santinanyc.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:“3/5", drinkrating:“4/5", tips:“Small Portions", google:"40.7396079,-74.0106317"})
+({name:"Santina", location:”Meatpacking", phone:"212-254-3000", website:"www.santinanyc.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:“3/5", drinkrating:“4/5", tips:“Small Portions", google:"40.7396079,-74.0106317"})
 
 ({name:"HK Lounge", location:“Hells Kitchen", phone:"212-947-4208", website:"www.hkhellskitchen.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:“2/5", drinkrating: “3/5", tips:“Server hooks it up on unlimited", google:"40.7396065,-74.0259526"})
 

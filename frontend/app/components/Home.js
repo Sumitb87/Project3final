@@ -153,9 +153,15 @@ const Home = React.createClass({
     })
   },
   render: function(){
+    var inlineStyle= {
+      color: "red",
+      padding: "3px",
+      backgroundColor: "blue",
+      textAlign: "center"
+    }
     return(
       <div>
-        <h1>Brunch Of Places</h1>
+        <h1 style={inlineStyle}>Brunch Of Places</h1>
 
         <Search onChangeLocation={this.onChangeLocation}
           onChangeName={this.onChangeName}
