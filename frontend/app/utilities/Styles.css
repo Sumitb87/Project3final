@@ -2,6 +2,7 @@
 .cssmenu {
   background: #f96e5b;
   width: auto;
+
 }
 .cssmenu ul {
   list-style: none;
@@ -95,7 +96,7 @@
 .cssmenu.align-right li:first-child a:after {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   .cssmenu ul li {
     float: none;
     display: block;
