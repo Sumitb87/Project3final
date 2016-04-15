@@ -19,7 +19,7 @@ function DisplayResults(props){
       Tips: {restaurant.tips}<br/>
       <img src={restaurant.url} /><br/>
 
-      <Link to={`/AddTip/${restaurant.name}`}><button >Add Restaurant Tip</button></Link>
+      <Link to={`/AddTip/${restaurant._id}`}><button >Add Restaurant Tip</button></Link>
 
 
 
