@@ -61,6 +61,7 @@ const AddTip = React.createClass({
           <input onChange={this.onChangeAuthor} placeholder='your name' type='text' /><br/><br/>
           <input onChange={this.onChangeTip} placeholder='tip' type='text' /><br/><br/>
           <button type='submit'>Submit</button>
+          <h4>{this.state.message}</h4>
         </form>
       </div>
     );
