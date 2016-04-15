@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {Link} from 'react-router';
 var url = 'http://localhost:3000/';
 
 // function AddTip(props) {
@@ -62,6 +63,7 @@ const AddTip = React.createClass({
           <input onChange={this.onChangeTip} placeholder='tip' type='text' /><br/><br/>
           <button type='submit'>Submit</button>
           <h4>{this.state.message}</h4>
+          <Link to="/">Back to Home</Link>
         </form>
       </div>
     );

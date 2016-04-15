@@ -17,8 +17,8 @@ function DisplayResults(props){
       Price Range: {restaurant.price}<br/>
       Food Rating: {restaurant.foodrating}<br/>
       Drink Rating: {restaurant.drinkrating}<br/>
-      Tips: {restaurant.tips.map((each_tip) => {
-        return <p>{each_tip.author}: {each_tip.tip}</p>;
+      Tips: {restaurant.tips.map((each_tip, i) => {
+        return <p key={i}>{each_tip.author}: {each_tip.tip}</p>;
       })}
       <img src={restaurant.url} /><br/>
       <Link to={`/AddTip/${restaurant._id}`}><button >Add Restaurant Tip</button></Link>
