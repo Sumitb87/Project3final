@@ -5,12 +5,17 @@ import Search from './Search';
 // import Filters from './Filters';
 import DisplayResults from './DisplayResults';
 import axios from 'axios';
+import Nav from './Nav';
 
 var url = 'http://localhost:3000/';
 
 const Home = React.createClass({
   clickConfirm: function(){
-    console.log('button was clicked!');
+    // e.preventDefault();
+    console.log('clickConfirm was called!');
+    // var restaurantName = e.target.value;
+    // console.log('restaurantName: ', restaurantName);
+
   },
   getInitialState: function() {
     return {
@@ -152,6 +157,7 @@ const Home = React.createClass({
       return err;
     })
   },
+
   render: function(){
     var inlineStyle= {
       color: "red",
@@ -163,6 +169,8 @@ const Home = React.createClass({
       <div>
         <h1 style={inlineStyle}>Brunch Of Places</h1>
 
+        <Nav />
+
         <Search onChangeLocation={this.onChangeLocation}
           onChangeName={this.onChangeName}
           onChangeBottomless={this.onChangeBottomless}
@@ -173,8 +181,10 @@ const Home = React.createClass({
           onChangePriceHigh={this.onChangePriceHigh}
           onSubmit={this.onSubmit}/>
 
-        <DisplayResults restaurants={this.state.ajaxReturn} />
-        <Link to="/AddNewRestaurant"><button onClick={this.clickConfirm}>Add Restaurant</button></Link>
+        <DisplayResults route={this.props.children}
+          clickConfirm={this.clickConfirm}
+          restaurants={this.state.ajaxReturn} />
+
         <br/><br/>
 
       </div>
