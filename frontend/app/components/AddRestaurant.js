@@ -6,7 +6,7 @@ import {Link} from 'react-router';
 const AddRestaurant = React.createClass({
   render: function(){
     return(
-      <form className="form-inline" role="form">
+      <form className="form-inline" role="form" action="mailto:brunchofplaces@gmail.com" method="GET">
                 <div className="form-group">
 
                     <input className="form-control" placeholder="Restaurant Name" />
@@ -15,7 +15,9 @@ const AddRestaurant = React.createClass({
 
                     <input className="form-control" placeholder="Restaurant Website" />
                 </div>&nbsp;<br/>
+
                 <button type="submit" className="btn btn-primary">Submit</button>&nbsp;
+
 
             </form>
     );
