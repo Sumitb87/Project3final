@@ -118,3 +118,11 @@
     display: none;
   }
 }
+
+.logo {
+  height: 350px;
+  width: 40px;
+  align: center;
+  display: flex;
+  margin-left: 30%;
+}

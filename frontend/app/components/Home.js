@@ -166,7 +166,7 @@ const Home = React.createClass({
   render: function(){
     return(
       <div>
-        <h1>Brunch Of Places</h1>
+        <h1 className="logo"><img src="/app/images/brunchlogo.png" alt="logo" /> </h1>
 
         <Nav />
 
