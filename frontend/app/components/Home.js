@@ -6,6 +6,9 @@ import Search from './Search';
 import DisplayResults from './DisplayResults';
 import axios from 'axios';
 import Nav from './Nav';
+require('../utilities/Main.css');
+//import Main from '../utilities/Main.css';
+
 
 var url = 'http://localhost:3000/';
 
