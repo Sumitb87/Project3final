@@ -9,7 +9,7 @@
 
 }
 h1 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Julius Sans One', sans-serif;
   color: black;
   text-align: center;
 }
@@ -18,7 +18,7 @@ h2 {
   font-family: 'Julius Sans One', sans-serif;
   color: black;
   text-align: center;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 h3 {
@@ -27,7 +27,7 @@ h3 {
   padding-right: 10px;
   padding-left: 20px;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@ hr {
 
 input {
   display: inline;
-  padding: 10px;
+  padding: 20px;
 }
 select {
     border: 0 none;
@@ -52,6 +52,10 @@ select {
     width: 160px;
     background: #f96e5b;
     font-family: 'Cinzel Decorative', cursive;
+}
+
+label {
+
 }
 
 button {
@@ -74,9 +78,13 @@ aside img {
   padding: 30px;
 }
 
-option {
-
+form {
+  padding: 10px;
 }
+
+/*option {
+
+}*/
 
 .vegImg {
   height: 60px;
@@ -87,7 +95,7 @@ option {
 
 .buttonSection {
   padding: 10px;
-  
+
 }
 
 .tipButton {
@@ -96,6 +104,7 @@ option {
   background: #f96e5b;
   color: white;
   font-size: 20px;
+  width: 45%;
 }
 
 .keyInfo {
@@ -130,4 +139,26 @@ option {
 .filterDiv {
   padding: 10px;
 
+}
+
+.acceptRes {
+  padding: 20px;
+}
+
+.googleInput {
+  margin-right: 4%
+;
+}
+
+.googleButt {
+  padding: 10px;
+  border: 3px lightgrey;
+  background: #f96e5b;
+  color: white;
+  font-size: 18px;
+    outline: 3px dotted lightblue;
+}
+
+.Submit {
+  width: 30%;
 }

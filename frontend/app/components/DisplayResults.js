@@ -7,6 +7,7 @@ function DisplayResults(props){
   const RestaurantList = props.restaurants.map((restaurant) => {
     return<div className="Results"><section key={restaurant._id}>
       <div className="keyInfo">
+
         <h1>{restaurant.name}</h1>
           <h3>{restaurant.phone}</h3>
             <h3>{restaurant.location}</h3>
@@ -28,19 +29,21 @@ function DisplayResults(props){
               <h4>Food Rating: {restaurant.foodrating}</h4>
               <h4> Drink Rating: {restaurant.drinkrating}</h4>
               <h4>Tips: {restaurant.tips}</h4>
-                <form action="http://maps.google.com/maps" method="get" target="_blank">
-         <label for="saddr">Enter your location</label>
-         <input type="text" name="saddr" />
-         <input type="hidden" name="daddr" value={restaurant.name} />
-         <input type="submit" value="Get directions" />
-      </form>
 
-                  <section className="buttonSection">
+          <section className="buttonSection">
                 <Link to={`/AddTip/${restaurant.name}`}><button className="tipButton">ADD TIP 🍳</button></Link>
-              </section>
-            </div>
+          </section>
+          <br/>
+
+      <form action="http://maps.google.com/maps" method="get" target="_blank">
+        <label className="googleInput" for="saddr">Enter your location</label><br/>
+        <input type="text" name="saddr" />
+          <input type="hidden" name="daddr" value={restaurant.name} />
+            <input className="googleButt"type="submit" value="Get directions" />
+          </form>
+        </div>
       </section>
-      </div>;
+    </div>;
   });
   return(
       <div>

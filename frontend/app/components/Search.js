@@ -25,22 +25,22 @@ const Search = React.createClass({
         <hr></hr>
 
           <div className= "filterDiv">
-          <h3 className="filterSearch">FILTER SEARCH:</h3>
+          <h3>FILTER SEARCH:</h3>
 
             <h1 className="bottomLess">Bottomless</h1>
-              <input onChange={this.props.onChangeBottomless} type='checkbox' /><br/><br/>
-                <img className="vegImg" src="http://www.friendlyvegan.com/images/logo.gif"></img><br/>
-                  <input onChange={this.props.onChangeDiet} type='checkbox' /><br/><br/>
+              <input onChange={this.props.onChangeBottomless} type='checkbox' /><br/><br/><br/>
+                <img className="vegImg" src="http://www.friendlyvegan.com/images/logo.gif"></img><br/><br/>
+                  <input onChange={this.props.onChangeDiet} type='checkbox' /><br/><br/><br/>
 
-                    <label>Accepting Reservations: </label>
-                      <input onChange={this.props.onChangeReservations} type='checkbox' /><br/><br/>
+                    <h3>Accepting Reservations: </h3><br/><br/>
+              <br/><br/>  <input onChange={this.props.onChangeReservations} type='checkbox' /><br/><br/><br/>
 
-                        <label>Price: </label>
+                        <h3>Price: </h3>
                           <input onChange={this.props.onChangePriceLow} type='radio' name='price' />$ &nbsp;
                             <input onChange={this.props.onChangePriceMedium} type='radio' name='price' />$$ &nbsp;
                               <input onChange={this.props.onChangePriceHigh} type='radio' name='price' />$$$<br/><br/><br/>
 
-                <button onClick={this.props.onSubmit} type='button'>Submit!</button>
+                <button className="Submit" onClick={this.props.onSubmit} type='button'>Submit!</button>
       </div>
   </div>
     );
