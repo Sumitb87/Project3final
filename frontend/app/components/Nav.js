@@ -13,7 +13,7 @@ const Nav = React.createClass({
          <li className='active'><a href='#'><span>Home</span></a></li>
          <Link to="/AddRestaurant"><li><span>Add Restaurant</span></li></Link>
          <Link to="/About"><li><span>About</span></li></Link>
-         <li className='last'><a href='#'><span>Contact</span></a></li>
+         <li className='last'><a href='mailto:brunchofplaces@gmail.com'><span>Contact</span></a></li>
         </ul>
       </div>
     );
