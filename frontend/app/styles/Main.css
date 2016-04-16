@@ -60,7 +60,7 @@ label {
 
 button {
   padding: 10px;
-  border: 3px lightgrey;
+  border: 1px lightgrey;
   background: #f96e5b;
   color: white;
   font-size: 20px;
@@ -152,11 +152,13 @@ form {
 
 .googleButt {
   padding: 10px;
-  border: 3px lightgrey;
   background: #f96e5b;
   color: white;
   font-size: 18px;
-    outline: 3px dotted lightblue;
+  text-decoration: bold;
+}
+.googleButt:hover {
+  outline: 3px dotted lightblue;
 }
 
 .Submit {
