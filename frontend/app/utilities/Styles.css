@@ -2,6 +2,7 @@
 .cssmenu {
   background: #f96e5b;
   width: auto;
+  text-align: center;
 }
 .cssmenu ul {
   list-style: none;
