@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import AddRestaurant from './AddRestaurant';
+import About from './About';
 
 
 
@@ -11,10 +12,7 @@ const Nav = React.createClass({
         <ul>
          <li className='active'><a href='#'><span>Home</span></a></li>
          <Link to="/AddRestaurant"><li><span>Add Restaurant</span></li></Link>
-
-
-
-         <li><a href='#'><span>About</span></a></li>
+         <Link to="/About"><li><span>About</span></li></Link>
          <li className='last'><a href='#'><span>Contact</span></a></li>
         </ul>
       </div>

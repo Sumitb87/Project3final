@@ -6,6 +6,7 @@ import Home from '../components/Home';
 // import AddTipContainer from '../components/AddTipContainer';
 import AddTip from '../components/AddTip';
 import AddRestaurant from '../components/AddRestaurant';
+import About from '../components/About';
 
 const routes = (
   <Router history={hashHistory}>
@@ -16,6 +17,7 @@ const routes = (
       </Route>
 
       <Route path='AddRestaurant' component={AddRestaurant} />
+      <Route path='About' component={About} />
 
 
 
