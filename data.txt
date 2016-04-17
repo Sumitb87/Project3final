@@ -1,23 +1,29 @@
-({name:"Cosme", location:"Tribeca", phone:"212-913-9659", website:"www.cosmenyc.com", veggie:"Yes", price:"high", reservations:"Yes", bottomless:"No", foodrating:"4/5", drinkrating:"4/5", tips:"good bloody mary", google:"40.7396162,-73.9905452"})
+({name:"Cosme", location:"Flatiron", phone:"212-913-9659", website:"www.cosmenyc.com", veggie:"Yes", price:"High", reservations:"Yes", bottomless:"No", foodrating:"4/5", drinkrating:"4/5", tips:[], url:"https://static01.nyt.com/images/2015/02/04/dining/04-REST3JP/04-REST3JP-articleLarge.jpg"})
 
-({name:"Santina", location:"Meatpacking", phone:"212-254-3000", website:"www.santinanyc.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:"3/5", drinkrating:"4/5", tips:"Small Portions", google:"40.7396079,-74.0106317"})
+({name:"Santina", location:"Meatpacking", phone:"212-254-3000", website:"www.santinanyc.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:"3/5", drinkrating:"4/5", tips:[], url:"https://s3-media3.fl.yelpcdn.com/bphoto/DJfQ8m2luGJfkm2of1GBAA/o.jpg"})
 
-({name:"HK Lounge", location:“Hells Kitchen", phone:"212-947-4208", website:"www.hkhellskitchen.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:“2/5", drinkrating: “3/5", tips:“Server hooks it up on unlimited", google:"40.7396065,-74.0259526"})
+({name:"HK Lounge", location:"Hells Kitchen", phone:"212-947-4208", website:"www.hkhellskitchen.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:"2/5", drinkrating: "3/5", tips:[], url:"http://media-cdn.tripadvisor.com/media/url-s/08/cc/6d/22/url0jpg.jpg"})
 
-({name:"Revel", location:“Meatpacking District", phone:"212-947-4208", website:"www.hkhellskitchen.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"Yes", foodrating:“2/5", drinkrating:“4/5", tips:“Good for large groups!", google:"40.7396762,-74.0090596"})
+({name:"Revel", location:"Meatpacking District", phone:"212-947-4208", website:"www.hkhellskitchen.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"Yes", foodrating:"2/5", drinkrating:"4/5", tips:[], url:"https://s3-media4.fl.yelpcdn.com/bphoto/3sOp0qOiqSsWWUxfduLBnA/o.jpg"})
 
-({name:"Hundred Acres", location:“SOHO", phone:"212-475-7500", website:"www.hundredacresnyc.com", veggie:"Yes", price:"High", reservations:"Yes", bottomless:"Yes", foodrating:“4/5", drinkrating:“5/5", tips:“Do it yourself bloody marks!", google:"40.727065,-74.0049998"})
+({name:"Hundred Acres", location:"SOHO", phone:"212-475-7500", website:"www.hundredacresnyc.com", veggie:"Yes", price:"High", reservations:"Yes", bottomless:"Yes", foodrating:"4/5", drinkrating:"5/5", tips:[], url:"https://s3-media2.fl.yelpcdn.com/bphoto/8bV1itLahw6ptU2tXwfC8g/o.jpg"})
 
-({name:"Swine", location:"Meatpacking District", phone:"212-255-7675", website:"www.swinenyc.com", veggie:"No", price:"Medium", reservations:"Yes", bottomless:"Yes", foodrating:"4/5", drinkrating:"2/5", tips:"Place is tiny!", google:["40.7342467","-74.0086193"]})
+({name:"Swine", location:"Meatpacking District", phone:"212-255-7675", website:"www.swinenyc.com", veggie:"No", price:"Medium", reservations:"Yes", bottomless:"Yes", foodrating:"4/5", drinkrating:"2/5", tips:[], url: "https://s3-media3.fl.yelpcdn.com/bphoto/Scq4loj0Zt0rmZLEUj95wg/o.jpg"})
 
-({name:"PS450", location:“Midtown East", phone:"212-532-7474", website:"www.ps450.com", veggie:"Yes", price:"Medium", reservations:"No", bottomless:"Yes", foodrating:“4/5", drinkrating:“2/5", tips:“Long wait, good music atmosphere!", google:"40.745172,-73.9854087"})
+({name:"PS450", location:"Midtown East", phone:"212-532-7474", website:"www.ps450.com", veggie:"Yes", price:"Medium", reservations:"No", bottomless:"Yes", foodrating:"4/5", drinkrating:"2/5", tips:[], url: "https://s3-media2.fl.yelpcdn.com/bphoto/HwP961w5sx6bzZenzaDm8A/o.jpg"})
 
-({name:"Maya", location:“Upper East", phone:"212-585-1818", website:"www.richardsandoval.com", veggie:"Yes", price:"Low", reservations:"No", bottomless:"Yes", foodrating:“3/5", drinkrating:“3/5", tips:“Long wait, good music atmosphere!", google:"40.7631512,-73.9618645"})
+({name:"Maya", location:"Upper East", phone:"212-585-1818", website:"www.richardsandoval.com", veggie:"Yes", price:"Low", reservations:"No", bottomless:"Yes", foodrating:"3/5", drinkrating:"3/5", tips:[], url: "https://s3-media2.fl.yelpcdn.com/bphoto/Yzj_HZijG_55r5YcIZm45A/o.jpg"})
 
-({name:"Cookshop", location:“Chelsea", phone:"212-924-4440", website:"www.cookshopny.com", veggie:"Yes", price:"High", reservations:"Yes", bottomless:"Yes", foodrating:“4/5", drinkrating:“4/5", tips:“Super friendly atmosphere!", google:"40.745519,-74.007672"})
+({name:"Cookshop", location:"Chelsea", phone:"212-924-4440", website:"www.cookshopny.com", veggie:"Yes", price:"High", reservations:"Yes", bottomless:"Yes", foodrating:"4/5", drinkrating:"4/5", tips:[], url: "https://s3-media1.fl.yelpcdn.com/bphoto/3ufUKMiX9oPnt_XoluOTvw/o.jpg"})
 
-({name:"Tartine", location:“Meatpacking", phone:"212-229-2611", website:"www.tartine.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:“3/5", drinkrating:“4/5", tips:“Spicy Bloody Mary!", google:"40.736276,-74.003514"})
+({name:"Tartine", location:"Meatpacking", phone:"212-229-2611", website:"www.tartine.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"No", foodrating:"3/5", drinkrating:"4/5", tips:[], url: "https://s3-media4.fl.yelpcdn.com/bphoto/zjT-2tkt9Z0NuHobSIgIJQ/o.jpg"})
 
-({name:"Ulysses", location:“FiDi", phone:"212-482-0400", website:"www.ulyssesnyc.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"Yes", foodrating:“2/5", drinkrating:“2/5", tips:“Boring!", google:"40.7043615,-74.0122346"})
+({name:"Ulysses Folk House", location:"Financial District", phone:"212-482-0400", website:"www.ulyssesnyc.com", veggie:"Yes", price:"Medium", reservations:"Yes", bottomless:"Yes", foodrating:"2/5", drinkrating:"2/5", tips:[], url: "https://s3-media4.fl.yelpcdn.com/bphoto/NIrXWI19Dm5y-VgYmzVS6A/o.jpg"})
 
-({name:"Sara Beths", location:“Upper West", phone:"212-989-2424", website:"www.sarabeth.com", veggie:"Yes", price:"High", reservations:"No", bottomless:"No", foodrating:“3/5", drinkrating:“2/5", tips:“Overrated!", google:"40.7410929,-74.0151329"})
+({name:"Sara Beths", location:"Upper West", phone:"212-989-2424", website:"www.sarabeth.com", veggie:"Yes", price:"High", reservations:"No", bottomless:"No", foodrating:"3/5", drinkrating:"2/5", tips:[], url: "https://s3-media3.fl.yelpcdn.com/bphoto/o-IN8CPVVoQ7Fmx65JYJtg/o.jpg"})
+
+({name: "Les Halles", location: "Financial District", phone: "212-285-8585", website: "leshalles.net", veggie: "Yes", price: "Medium", reservations: "Yes", bottomless: "No", foodrating: "4/5", drinkrating: "3/5", tips: [], url: "https://s3-media3.fl.yelpcdn.com/bphoto/8uqNCdhP-vYE0PcSCPdjSA/o.jpg"})
+
+({name: "Jack’s Wife Freda", location: "Soho", phone: "212-510-8550", website: "jackswifefreda.com", veggie: "Yes", price: "Medium", reservations: "Yes", bottomless: "No", foodrating: "4/5", drinkrating: "4/5", tips: [], url: "https://s3-media1.fl.yelpcdn.com/bphoto/JTve8wxMue9iLcOsH6IjaA/o.jpg"})
+
+({name: "Distilled", location: "Tribeca", phone: "212-601-9514", website: "distilledny.com", veggie: "Yes", price: "High", reservations: "Yes", bottomless: "No", foodrating: "4/5", drinkrating: "3/5", tips: [], url: "https://s3-media4.fl.yelpcdn.com/bphoto/LyHbBKel2rYB99j4BWgxeg/o.jpg"})
