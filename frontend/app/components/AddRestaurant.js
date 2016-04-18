@@ -35,6 +35,7 @@ const AddRestaurant = React.createClass({
     return(
       <form className="form-inline" role="form" action={this.state.MailLink} method="POST">
         <div className="form-group">
+          <h1>Add A restaurant</h1>
           <input onChange={this.onChangeName} className="form-control" placeholder="Restaurant Name" />
         </div>&nbsp;<br/>
         <div className="form-group">

@@ -129,8 +129,12 @@
 }
 
 .groupPic {
-  height: 250px;
-  width: 300px;
-  margin: auto;
+  /*height: 250px;
+  width: 300px;*/
+  /*margin: auto;*/
+
+ text-align: center;
+ padding: 20px;
+}
   /*display:block;*/
 }
