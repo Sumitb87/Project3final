@@ -127,3 +127,10 @@
   display: flex;
   margin-left: 30%;
 }
+
+.groupPic {
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  /*display:block;*/
+}
