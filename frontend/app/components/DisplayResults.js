@@ -7,6 +7,7 @@ function DisplayResults(props){
   const RestaurantList = props.restaurants.map((restaurant) => {
     return<div className="Results"><section key={restaurant._id}>
       //key info holder are displayed inline i.e webside, phone//
+    return<div key={restaurant._id} className="Results"><section >
       <div className="keyInfo">
 
         <h1>{restaurant.name}</h1>
@@ -23,6 +24,11 @@ function DisplayResults(props){
             <br/>
 
           //new class tips and info about the place///
+
+                    <img src={restaurant.url} />
+
+                  </aside>
+            <br/>
 
               <div className="restInfo">
               <h4>Vegetarian-friendly: {restaurant.veggie}</h4>
@@ -41,6 +47,17 @@ function DisplayResults(props){
 //google maps form///
       <form action="http://maps.google.com/maps" method="get" target="_blank">
         <label className="googleInput" for="saddr">Enter your location</label><br/>
+              Tips: {restaurant.tips.map((each_tip, i) => {
+                return <p key={i}>{each_tip.author}: {each_tip.tip}</p>;
+              })}
+
+          <section className="buttonSection">
+                <Link to={`/AddTip/${restaurant._id}`}><button className="tipButton">ADD TIP 🍳</button></Link>
+          </section>
+          <br/>
+
+      <form action="http://maps.google.com/maps" method="get" target="_blank">
+        <label className="googleInput" htmlFor="saddr">Enter your location</label><br/>
         <input type="text" name="saddr" />
           <input type="hidden" name="daddr" value={restaurant.name} />
             <input className="googleButt"type="submit" value="Get directions" />

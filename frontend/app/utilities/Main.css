@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:900);
+@import url(https://fonts.googleapis.com/css?family=Chango);
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Nosifer);
+
+* {
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 17px;
+}
+
+h3 {
+  display: inline;
+  font-family: 'Julius Sans One', sans-serif;
+  padding-right: 10px;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-align: center;
+}
+
+hr {
+  width: 90%;
+  text-align: center;
+  padding: 1px;
+  background: lightblue;
+}
+
+input {
+  display: inline;
+  padding: 20px;
+}
+select {
+    border: 0 none;
+    color: #FFFFFF;
+    background: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 10px;
+    width: 160px;
+    background: #f96e5b;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+label {
+
+}
+
+button {
+  padding: 10px;
+  border: 1px lightgrey;
+  background: #f96e5b;
+  color: white;
+  font-size: 20px;
+}
+
+button:hover{
+  outline: 3px dotted lightblue;
+}
+
+aside img {
+  width: 200px;
+  height: 150px;
+  float: right;
+  margin: auto;
+  padding: 30px;
+}
+
+form {
+  padding: 10px;
+}
+
+/*option {
+}*/
+
+.vegImg {
+  height: 60px;
+  width: 70px;
+  padding: 5px;
+  padding-bottom: 5px;
+}
+
+.buttonSection {
+  padding: 10px;
+
+}
+
+.tipButton {
+  padding: 10px;
+  border: 3px lightgrey;
+  background: #f96e5b;
+  color: white;
+  font-size: 20px;
+  width: 45%;
+}
+
+.keyInfo {
+  border-top: 2px solid black;
+  text-align: center;
+}
+
+.restInfo {
+  border-bottom: 3px solid black;
+  width: 45%;
+
+}
+
+.inputStuff {
+  padding: 100px;
+  text-align: center;
+  font-family: fantasy;
+}
+
+.bottomLess {
+  font-size: 16px;
+  margin-left: 39%;
+  padding: 20px;
+  margin-top: 5%;
+  border: 3px solid lightgrey;
+  border-bottom: none;
+  width: 20%;
+  text-align: center;
+  font-family: 'Nosifer', cursive;
+  color: lightblue;
+}
+.filterDiv {
+  padding: 10px;
+
+}
+
+.acceptRes {
+  padding: 20px;
+}
+
+.googleInput {
+  margin-right: 4%
+;
+}
+
+.googleButt {
+  padding: 10px;
+  background: #f96e5b;
+  color: white;
+  font-size: 18px;
+  text-decoration: bold;
+}
+.googleButt:hover {
+  outline: 3px dotted lightblue;
+}
+
+.Submit {
+  width: 30%;
+}

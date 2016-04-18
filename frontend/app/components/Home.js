@@ -7,6 +7,9 @@ import DisplayResults from './DisplayResults';
 import axios from 'axios';
 import Nav from './Nav';
 require('../styles/Main.css')
+require('../utilities/Main.css');
+//import Main from '../utilities/Main.css';
+
 
 var url = 'http://localhost:3000/';
 
@@ -39,11 +42,13 @@ const Home = React.createClass({
       this.setState({
         ajaxReturn: response.data
       });
+      //console.log("this.state.ajaxReturn:", this.state.ajaxReturn);
     }.bind(this))
     .catch(function(err){
-      console.warn('Error');
+      console.log('Error:', err);
       return err;
     })
+
   },
   onChangeName: function(e) {
     console.log('onChangeName was called!');
@@ -162,7 +167,7 @@ const Home = React.createClass({
   render: function(){
     return(
       <div>
-        <h1>Brunch Of Places</h1>
+        <h1 className="logo"><img src="/app/images/brunchlogo.png" alt="logo" /> </h1>
 
         <Nav />
 

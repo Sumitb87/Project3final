@@ -2,7 +2,11 @@
 .cssmenu {
   background: #f96e5b;
   width: auto;
+<<<<<<< HEAD
 
+=======
+  text-align: center;
+>>>>>>> 582da68b7533bca750a78204c4694a5f53e0eb19
 }
 .cssmenu ul {
   list-style: none;
@@ -31,7 +35,7 @@
 .cssmenu.align-center ul {
   text-align: center;
 }
-.cssmenu ul li a {
+.cssmenu ul li span {
   color: #ffffff;
   text-decoration: none;
   display: block;
@@ -47,13 +51,13 @@
   -o-transition: color .25s;
   transition: color .25s;
 }
-.cssmenu ul li a:hover {
+.cssmenu ul li span:hover {
   color: #333333;
 }
-.cssmenu ul li a:hover:before {
+.cssmenu ul li span:hover:before {
   width: 100%;
 }
-.cssmenu ul li a:after {
+.cssmenu ul li span:after {
   content: "";
   display: block;
   position: absolute;
@@ -64,7 +68,7 @@
   background: #ffffff;
   opacity: .5;
 }
-.cssmenu ul li a:before {
+.cssmenu ul li span:before {
   content: "";
   display: block;
   position: absolute;
@@ -101,7 +105,7 @@
     float: none;
     display: block;
   }
-  .cssmenu ul li a {
+  .cssmenu ul li span {
     width: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -112,10 +116,25 @@
   .cssmenu ul li:last-child > a {
     border: 0;
   }
-  .cssmenu ul li a:after {
+  .cssmenu ul li span:after {
     display: none;
   }
-  .cssmenu ul li a:before {
+  .cssmenu ul li span:before {
     display: none;
   }
+}
+
+.logo {
+  height: 350px;
+  width: 40px;
+  align: center;
+  display: flex;
+  margin-left: 30%;
+}
+
+.groupPic {
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  /*display:block;*/
 }
