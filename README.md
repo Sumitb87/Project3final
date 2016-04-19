@@ -18,3 +18,7 @@ React
 Google API
 CSS style sheets
 HTML
+
+### Citations 
+Used CSS tricks for Nav Bar 
+Also used bootstrap for the forms 
